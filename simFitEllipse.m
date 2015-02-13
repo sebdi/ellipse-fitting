@@ -23,6 +23,7 @@ hold on;
 p = fitWithGWLS(noise(1,:),noise(2,:));
 [x0,y0,a,b,alpha] = Matrix2AngleForm(p(1),p(2),1-p(1),p(3),p(4),p(5));
 r = plotEllipse(x0, y0, a, b, rad2deg(alpha), 100,'yellow',1);
+
 legend('GroundTruth','Noise','L-S with orthogonal distance','L-S with algebraic distance','Gradient Weighted L-S')
 ylim([-30 30]);
 end

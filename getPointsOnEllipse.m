@@ -1,14 +1,10 @@
 function r = getPointsOnEllipse(x, y, a, b, angle, steps)
-%GETPOINTSONELLIPSE Summary of this function goes here
-%   Detailed explanation goes here
-%# This functions returns points to draw an ellipse
-%#
-%#  @param x     X coordinate
-%#  @param y     Y coordinate
-%#  @param a     Semimajor axis
-%#  @param b     Semiminor axis
-%#  @param angle Angle of the ellipse (in degrees)
-%#
+%GETPOINTSONELLIPSE Draws points from an ellipse
+%
+% AUTHOR Sebastian Dingler <s.dingler@gmail.com>
+%        Karlsruhe Institute of Technology (KIT), Germany
+%
+% DATE   22.12.2014
 
 beta = angle * (pi / 180);
 sinbeta = sin(beta);
