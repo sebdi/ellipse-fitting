@@ -11,5 +11,6 @@ A collection of ellipse fitting algorithms:
 References:
 =========================
 [1] Zhengyou Zhang, "*Parameter estimation techniques: a tutorial with application to conic fitting*", Image and Vision Computing, 15(1):59 - 76, 1997.
+
 [2] Sung Joon Ahn, W. Rauh, and M. Recknagel, "*Ellipse fitting and parameter assessment of circular object targets for robot vision*", Intelligent Robots and Systems, 1999.
  
