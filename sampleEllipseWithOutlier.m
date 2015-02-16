@@ -12,8 +12,8 @@ function [ r ] = sampleEllipseWithOutlier(X_c, Y_c, a, b, alpha, var, sampleInte
 % DATE   22.12.2014
 [XY] = sampleEllipse(X_c,Y_c,a,b,alpha,var,sampleInterval,nSample);
 % add uniformly distributed outliers 
-X = [XY(1,:) X_c-a*rand(1,nOutlier/4) X_c-a*rand(1,nOutlier/4) X_c-a*rand(1,nOutlier/4) X_c-a*rand(1,nOutlier/4)];
-Y = [XY(2,:) Y_c+a*rand(1,nOutlier/4) Y_c-a*rand(1,nOutlier/4) Y_c-a*rand(1,nOutlier/4) Y_c+a*rand(1,nOutlier/4)];
+X = [XY(1,:) (a*2) * (rand(1,nOutlier)-0.5)+X_c];
+Y = [XY(2,:) (a*2) * (rand(1,nOutlier)-0.5)+Y_c];
 r = [X;Y];
 end
 
