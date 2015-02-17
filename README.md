@@ -8,6 +8,8 @@ A collection of ellipse fitting algorithms:
 * M-Estimator (Cauchy)
 * Least Median of Squares
 
+You can test it online as a web service on [www.cloudrunner.eu](www.cloudrunner.eu/algorithm/172/ellipse-fitting/)!
+
 How to use
 -------------------
 Use the main.m file. You can use it like this:
